@@ -199,6 +199,115 @@ h3 {
 .col-6 {
   display: none;
 }
+/*стилизация подвала*/
+footer {
+  background: #262626;
+  color: #FFFFFF;
+}
+.logo-footer {
+  padding: 56px 120px 40px 8px;
+}
+.line-footer {
+  background:  #FFFFFF;
+  margin: 0;
+  border: 0.5px solid white;
+}
+.language {
+  display: inline-block;
+  color: #FFFFFF;
+  background: #3B3B3B;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 32px 0 32px 8px;
+  position: relative;
+}
+.language p {
+  display: inline-block;
+  padding-left: 48px;
+}
+.logo-world {
+  padding-right: 16px;
+  padding-left: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer-list-arrow {
+  padding-left: 49px;
+  padding-right: 8px;
+}
+.social-networks p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+.social-networks .lattice {
+  color: #49A144;
+  padding-left: 8px;
+}
+.logo-social {
+  display: flex;
+  padding-left: 8px;
+  padding-bottom: 44px;
+}
+.logo-social-inst {
+  align-self: center;
+}
+.logo-social svg {
+  margin-right: 20px;
+}
+/*стилизация навигации в подвале*/
+nav {
+  display: flex;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+  padding-bottom: 23px;
+  padding-left: 8px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  
+}
+.app-link {
+  padding: 24px;
+  display: flex;
+}
+.app-link a:first-child {
+  margin-right: 25px;
+}
+address {
+  font-style: normal;
+  font-size: 11px;
+  line-height: 13px;
+  padding-top: 40px;
+  position: relative;
+  padding-bottom: 16px;
+}
+address p {
+  padding-bottom: 24px;
+  padding-left: 8px;
+  margin: 0;
+}
+address p a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.btn-up {
+  position: absolute;
+  top: 79px;
+  right: 16px;
+}
+
 @media screen and (min-width: 768px) {
   body {
     min-width: 768px;
@@ -295,6 +404,39 @@ h3 {
 img {
   width: 100%;
 }
+.app-link div  {
+  margin:  auto;
+  padding: 14px 0;
+}
+address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 768px;
+  padding-right: 217px;
+}
+.btn-up {
+  top: 24px;
+  right: 16px;
+}
+.lang-soc-nav {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 24px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+ul div {
+  padding: 39px 86px 0 0;
+}
+.language {
+  margin-right: 80px;
+}
+
+}
+
 @media screen and (min-width: 1124px) {
 html {
   background-color: #d9d9d9;
@@ -355,4 +497,7 @@ main  {
 .input-search-restaurant,
 .btn-search-restaurant {
   background-color: #FFFFFF;
+}
+.btn-up {
+  right: -116px;
 }
