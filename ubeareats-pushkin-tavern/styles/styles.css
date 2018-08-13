@@ -218,6 +218,72 @@ h2 {
 .col-12 {
   flex-basis: 100%;
 }
+.food {
+  width: 96,25%;
+}
+.food h2 {
+  position: relative;
+  margin-bottom: 56px;
+}
+.food h2::after {
+  content: "";
+  width: 50px;
+  border-bottom: 1px solid #626262;
+  height: 1px;
+  position: absolute;
+  top: 46px;
+  left: 135px;
+}
+
+.food .row .card {
+  margin: auto 16px 8px;
+  width: 307px;
+  border-bottom: 0.5px solid #d9d9d9;
+  padding-right: 0;
+  position: relative;
+}
+.food .row .card:last-child {
+  margin-bottom: 40px;
+}
+.food .row .card img{
+  float: right;   
+  border-radius: 2px;
+}
+.food .row .card h3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 185px;
+  color: #1D1D1D;
+  margin: auto 0;
+  overflow: hidden;
+  text-overflow: ellipsis;/*многоточие если текст не влез*/
+  white-space: nowrap;/*запрет переноса строки*/
+  display: inline-block;
+}
+.food .row .card .price {
+  font-weight: 600;
+  color: #1D1D1D;
+  font-size: 15px;
+  line-height: 21px;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  margin: 0;
+  padding: 0;
+}
+/* заменить на класс
+=======================================
+ */
+.first-card-p { 
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #626262;
+  max-width: 180px;
+  margin: 0;
+  padding-top: 0;
+}
 footer {
   background: #262626;
   color: #FFFFFF;
@@ -458,6 +524,31 @@ address p a {
   .col-md-12 {
     flex-basis: 100%;
   }
+  .food h2 {
+    text-align: left;
+    padding-left: 8px;
+  }
+  .food h2::after { /*скрыта линия под заголовком ЗАКУСКИ*/
+    display: none;
+  }
+  .food .row .card {
+    border: 1px solid #d9d9d9;
+  }
+  .food .row .card img {
+    min-width: 200px;
+    max-height: 160px;
+  }
+  .food .row .card h3,
+  .food .row .card p {
+      padding-left: 16px;
+  }
+  .food .row .card h3 {
+    padding-top: 16px;
+    max-width: 309px;
+  }
+  .food .row .card:last-child {
+    margin-bottom: 80px;
+  }
   .app-link div  {
     margin: auto;
     padding: 14px 0;
@@ -544,9 +635,23 @@ address p a {
   .range {
     padding-left: 81px;
   }
+  .food .row {
+    justify-content: center;
+  }
+  .food .row .col-12:nth-child(odd) {
+    margin-right: 16px;
+  }
+  .food .row .card:nth-child(5) {
+    margin-top: 0;
+    margin-bottom: auto;
+  }
   .btn-sign-in {
     padding: 14px 18px;
   }
   .head-photo {
     background-image: url(../img/head-photo/3.png);
   }
+  .food h2 {
+    padding-left: 81px;
+  }
+}
