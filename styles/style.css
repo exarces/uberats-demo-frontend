@@ -5,3 +5,63 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
 }
+header {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 72px;
+  box-shadow: 0 5px 16px -5px rgba(38, 38, 38, 0.16);
+  }
+.logo {
+  max-width: 107px;
+}
+.btn-sign-in,
+.btn-register {
+  padding: 14px 15px;
+  max-width: 72px;
+  border-radius: 2px;
+  font-size: 11px; 
+  line-height: 13px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+.btn-sign-in {
+  background: white;
+  border: 1px solid #E0E0E0;
+  margin-right: 6px;
+  box-sizing: border-box;
+  }
+.btn-register {
+  background: black;
+  color: white;
+  border: none;
+  margin-right: 4px;
+  margin-left: 6px;    
+}
+.basket {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+  .location {
+    display: none;
+  }
+  
+  .basket {
+  display: block;
+  }
+@media screen and (min-width: 1124px) {
+html {
+  background-color: #d9d9d9;
+}
+body {
+  min-width: 1124px;
+  background-color: #FFFFFF;
+}
+.btn-sign-in {
+  padding: 14px 18px;
+}
