@@ -110,6 +110,10 @@ hr {
 .location {
   display: flex;
 }
+/*стилизация основного контента*/
+.container {
+  max-width: 976px;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -161,6 +165,39 @@ hr {
 }
 .col-12 {
   flex-basis: 100%;
+}
+.card:nth-child(n+5) {
+  display: none;
+}
+.card {
+  padding-bottom: 36px;
+}
+h2 {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 500;
+  padding-left: 8px;
+}
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 14px 36px 4px 0;
+}
+.cuisine {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+  margin: 0 0 4px 0; 
+}
+.time-delivery {
+  margin: 0;
+}
+.card:nth-child(4) {
+  padding-bottom: 48px;
+}
+.col-6 {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   body {
@@ -252,6 +289,12 @@ hr {
 .col-md-12 {
   flex-basis: 100%;
 }
+.card:nth-child(n+5) {
+  display: block;
+}
+img {
+  width: 100%;
+}
 @media screen and (min-width: 1124px) {
 html {
   background-color: #d9d9d9;
@@ -263,6 +306,16 @@ body {
 .btn-sign-in {
   padding: 14px 18px;
 }
+main  {
+  margin: auto 80px 80px;
+}
+.row h2 {
+  margin-left: 8px;
+}
+.row .card img {
+  width: 100%;
+} /* ширина 100% потому что первые 4 карточки отображатся размером меньше,
+чем остальные*/
 .col-xl-1 {
   flex-basis: 8.333333%;
 }
