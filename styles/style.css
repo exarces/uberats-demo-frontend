@@ -43,6 +43,73 @@ header {
 .basket {
   display: none;
 }
+  /* Стилизация строки поиска, времени, адреса*/
+.form-search-restaurant {
+  margin-top: 40px;
+}
+button {
+  border: none;
+}
+input {
+  border: none;
+  background: #F2F2F2;
+}
+.btn-search-restaurant {
+  background: #F2F2F2;
+  outline: none;
+}
+.input-search-restaurant {
+  font-size: 13px;
+  color: #626262;
+  font-family: 'Roboto', sans-serif;
+}
+hr {
+  background-color: #626262;
+}
+.location-two {
+  display: none;
+}
+.time p,
+.location-to p {
+  color: #626262;
+  font-size: 11px;
+  line-height: 13px;
+}
+.time div,
+.adds-to {
+  color: #1D1D1D;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.time {
+  margin-left: 8px;
+}
+.time div {
+  padding: 8px 16px;
+}
+.location-to {
+  margin-left: 16px;
+  margin-right: 4px;
+}
+.adds-to   {
+  position: relative;
+  padding: 8px 43px 8px 11px;
+}
+.adds-to svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.adds-to div {
+  margin-left: 20px;
+}
+.location {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   body {
     min-width: 768px;
@@ -54,6 +121,49 @@ header {
   .basket {
   display: block;
   }
+  .location-two {
+  display: flex;
+  }
+.time-two div,
+.adds-to-two {
+  color: #1D1D1D;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.adds-to-two {
+  position: relative;
+}
+.adds-to-two svg {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+}
+.adds-to-two div {
+  padding:8px 30px 8px 36px;
+}
+.time-two div {
+  padding: 8px 16px;
+}
+.time-two::after {
+  content: "to";
+  color: #626262;
+  font-size: 11px;
+  line-height: 13px;
+  margin: auto 10px;
+}
+.location-to-two p {
+  color: #626262;
+  font-size: 13px;
+  line-height: 15px;
+}
+.btn-register {
+  margin: auto;
+  padding: auto;
+}
 @media screen and (min-width: 1124px) {
 html {
   background-color: #d9d9d9;
@@ -64,4 +174,8 @@ body {
 }
 .btn-sign-in {
   padding: 14px 18px;
+}
+.input-search-restaurant,
+.btn-search-restaurant {
+  background-color: #FFFFFF;
 }
