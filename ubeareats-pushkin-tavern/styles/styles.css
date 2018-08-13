@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+  background: #F2F2F2;
+  max-width: 320px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+header {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 72px;
+  box-shadow: 0 5px 16px -5px rgba(38, 38, 38, 0.16);
+}
+.logo {
+  max-width: 107px;
+}
+.btn-sign-in,
+.btn-register {
+  padding: 14px 15px;
+  max-width: 72px;
+  border-radius: 2px;
+  font-size: 11px; 
+  line-height: 13px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+.btn-sign-in {
+  background: white;
+  border: 1px solid #E0E0E0;
+  margin-right: 6px;
+  box-sizing: border-box;
+  }
+.btn-register {
+  background: black;
+  color: white;
+  border: none;
+  margin-right: 4px;
+  margin-left: 6px;    
+}
+.basket {
+  display: none;
+}
+  /* Стилизация строки поиска, времени, адреса*/
+.form-search-restaurant {
+  margin-top: 40px;
+}
+button {
+  border: none;
+}
+input {
+  border: none;
+  background: #F2F2F2;
+}
+hr {
+  background-color: #626262;
+}
+/* div class='location' на мобильной версии страницы отсутствует вовсе*/
+.location {
+    display: none;
+}
+.location-two {
+  display: none;
+}
+.time p,
+.location-to p {
+  color: #626262;
+  font-size: 11px;
+  line-height: 13px;
+}
+.time div,
+.adds-to {
+  color: #1D1D1D;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.time {
+  margin-left: 8px;
+}
+.time div {
+  padding: 8px 16px;
+}
+.location-to {
+  margin-left: 16px;
+  margin-right: 4px;
+}
+.adds-to   {
+  position: relative;
+  padding: 8px 43px 8px 11px;
+}
+.adds-to svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.adds-to div {
+  margin-left: 20px;
+}
+.location {
+  display: flex;
+}
+/* div class='location' на мобильной версии страницы отсутствует вовсе*/
+.location {
+  display: none;
+}
+footer {
+  background: #262626;
+  color: #FFFFFF;
+}
+.logo-footer {
+  padding: 56px 120px 40px 8px;
+}
+.line-footer {
+  background:  #FFFFFF;
+  margin: 0;
+  border: 0.5px solid white;
+}
+.language {
+  display: inline-block;
+  color: #FFFFFF;
+  background: #3B3B3B;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 32px 0 32px 8px;
+  position: relative;
+}
+.language p {
+  display: inline-block;
+  padding-left: 48px;
+}
+.logo-world {
+  padding: 0 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer-list-arrow {
+  padding-left: 49px;
+  padding-right: 8px;
+}
+.social-networks p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+.social-networks .lattice {
+  color: #49A144;
+  padding-left: 8px;
+}
+.logo-social {
+  display: flex;
+  padding-left: 8px;
+  padding-bottom: 44px;
+}
+.logo-social-inst {
+  align-self: center;
+}
+.logo-social svg {
+  margin-right: 20px;
+}
+/*стилизация навигации в подвале*/
+nav {
+  display: flex;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+  padding-bottom: 23px;
+  padding-left: 8px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  
+}
+.app-link {
+  padding: 24px;
+  display: flex;
+}
+.app-link a:first-child {
+  margin-right: 25px;
+}
+address {
+  font-style: normal;
+  font-size: 11px;
+  line-height: 13px;
+  padding-top: 40px;
+  position: relative;
+  padding-bottom: 16px;
+}
+address p {
+  padding-bottom: 24px;
+  padding-left: 8px;
+  margin: 0;
+}
+address p a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.btn-up {
+  position: absolute;
+  top: 79px;
+  right: 16px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+  .location {
+    display: none;
+  }
+  .basket {
+    display: block;
+  }
+  .location-two {
+    display: flex;
+  }
+  .time-two div,
+  .adds-to-two {
+    color: #1D1D1D;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  .adds-to-two {
+    position: relative;
+  }
+  .adds-to-two svg {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+  }
+  .adds-to-two div {
+    padding:8px 30px 8px 36px;
+  }
+  .time-two div {
+    padding: 8px 16px;
+  }
+  .time-two::after {
+    content: "to";
+    color: #626262;
+    font-size: 11px;
+    line-height: 13px;
+    margin: auto 10px;
+  }
+  .location-to-two p {
+    color: #626262;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .btn-register {
+    margin: auto;
+    padding: auto;
+  }
+  .app-link div  {
+    margin: auto;
+    padding: 14px 0;
+  }
+  address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 768px;
+    padding-right: 217px;
+  }
+  .btn-up {
+    top: 24px;
+    right: 16px;
+  }
+  .lang-soc-nav {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 24px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+ ul div {
+   padding: 39px 86px 0 0;
+  }
+ .language {
+   margin-right: 80px;
+  }
+ address p {
+   font-size: 11px;
+   line-height: 13px;
+  }
+ address p a {
+  font-size: 11px;
+  line-height: 13px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  html {
+    background-color: #d9d9d9;
+  }
+  body {
+    min-width: 1124px;
+    background-color: #FFFFFF;
+  }
+  .btn-sign-in {
+    padding: 14px 18px;
+  }
